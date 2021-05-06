@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/renewload"
+            android:title="重新加载" />
+        <item
+            android:id="@+id/edit"
+            android:title="批量编辑" />
+        <item
+            android:id="@+id/order"
+            android:title="排序" />
+        <item
+            android:id="@+id/share"
+            android:title="分享到" />
+
+    </group>
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.widget.refreshreciview.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/slideview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+       <RelativeLayout
+           android:id="@+id/card_view"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/dp_50">
+           <CheckBox
+               android:id="@+id/checkbox"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:layout_centerVertical="true"
+               android:text="我是一个任务"
+               android:maxLength="10"
+               android:singleLine="true"
+               android:marqueeRepeatLimit="marquee_forever"
+               android:ellipsize="marquee"
+               android:id="@+id/task_content"
+               android:layout_toRightOf="@+id/checkbox"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+           <TextView
+               android:id="@+id/dead_mes"
+               android:singleLine="true"
+               android:marqueeRepeatLimit="marquee_forever"
+               android:ellipsize="marquee"
+               android:text="截止日期"
+               android:layout_marginRight="@dimen/dp_50"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+       </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/detele_view"
+        android:src="@drawable/delete"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="wrap_content"/>
+
+</com.example.myapplication.widget.refreshreciview.SlideLayout>

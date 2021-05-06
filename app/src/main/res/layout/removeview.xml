@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!--专辑封面图-->
+    <ImageView
+        android:id="@+id/iv_album_cover"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/clock" />
+    <TextView
+        android:textColor="#7adfb8"
+        android:textSize="20dp"
+        android:text="你有未完成的任务！！！！"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_album_cover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  <ImageView
+      android:layout_alignParentRight="true"
+      android:id="@+id/iv_tow"
+      android:src="@drawable/success"
+      android:layout_width="64dp"
+      android:layout_height="64dp"/>
+
+
+
+
+</RelativeLayout>

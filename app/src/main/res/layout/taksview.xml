@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <androidx.cardview.widget.CardView
+       app:cardCornerRadius="25dp"
+       app:cardElevation="25dp"
+       app:cardUseCompatPadding="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <TextView
+         android:id="@+id/task_head"
+         android:layout_gravity="center"
+         android:text="任务的标题"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+     <androidx.cardview.widget.CardView
+         app:cardCornerRadius="5dp"
+         app:cardElevation="5dp"
+         app:cardUseCompatPadding="true"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <TextView
+             android:id="@+id/descrip"
+             android:gravity="center"
+             android:layout_marginTop="@dimen/dp_20"
+             android:hint="你没有添加任何描述"
+             android:layout_gravity="center"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"/>
+     </androidx.cardview.widget.CardView>
+ </LinearLayout>
+   </androidx.cardview.widget.CardView>
+</RelativeLayout>

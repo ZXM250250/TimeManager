@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.FinishFragment">
+    <TextView
+        android:textSize="@dimen/dp_25"
+        android:gravity="center"
+        android:text="一些说明"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:gravity="center"
+        android:text="有侧滑删除 下拉刷新  时间排序
+开始时数据为空  需要使用加号添加  点击条目就进入 详细界面 3d立体  可删改任意数据
+ 详细界面
+实现了app的自启动  已经开机自启  第二个界面bug太大  没时间了  只好取消
+"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.example.myapplication.SnowView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>
